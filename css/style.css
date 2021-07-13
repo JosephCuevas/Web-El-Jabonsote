@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
+}
+
+#logo {
+	margin: auto;
+	height: 200px;
+	width: 350px;
+	text-align: center;
+}
+
+#logo h1 {	
+	font-size: 50px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto 40% 40% auto;
+	
+	grid-gap: 10px;
+	padding: 10px;
+}
+
+header {
+	/* background-color: #41709c; */
+	height: 200px;
+	/* width: auto; */
+}
+
+nav{
+	/* background-color: #929fb3; */
+	height: 65px;
+	text-align: center;
+	/* width: auto; */
+}
+
+nav ul {
+	list-style: none;
+	display: inline-block;
+	padding: 18px;
+	margin-bottom: 3px;
+}
+
+nav ul li {
+	float: left;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+nav ul li a {
+	color: #818c9c;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 15px;
+	padding: 10px;
+}
+
+nav ul li a:hover {
+	border-radius: 3%;
+	color: #fff;
+	background-color: #818c9c98;
+}
+
+
+.section1 {
+	border: #999 1px solid;
+	height: 300px;
+	/* width: 500px; */
+}
+.section2 {
+	border: aqua 1px solid;
+	height: 300px;
+	/* width: 500px; */
+}
+.section3 {
+	border:  rgb(143, 141, 49) 1px solid;
+	height: 300px;
+	/* width: 500px; */
+}
+.section4 {
+	border:  rgb(75, 58, 121) 1px solid;
+	height: 300px;
+	/* width: 500px; */
+}
+
+footer {
+	/* background-color: #41709c; */
+	height: 200px;
+}
+
+.social-media {
+	text-align: center;
+	font-size: 1.5rem;
+}
+.social-media a {
+	padding: 0.5rem;
+	color: #818c9c;
+}
+.social-media a:hover {
+	border-radius: 50%;
+	color: #fff;
+	background-color: #818c9c;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/* ************** MEDIA QUERYES ************ */
+
+@media screen and (max-width: 600px ) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: 90%;
+		justify-content: center;
+	}
+
+
+}
