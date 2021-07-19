@@ -5,11 +5,17 @@
 	font-family: 'Oswald', sans-serif;
 }
 
+body {
+	width: 80%;
+	margin: 0 auto;
+}
+
 #logo {
 	margin: auto;
 	height: 200px;
 	width: 350px;
 	text-align: center;
+	color: #818c9c98;
 }
 
 #logo h1 {	
@@ -18,7 +24,7 @@
 
 .grid-container {
 	display: grid;
-	grid-template-columns: auto 40% 40% auto;
+	grid-template-columns: 50% 50%;
 	
 	grid-gap: 10px;
 	padding: 10px;
@@ -64,27 +70,26 @@ nav ul li a:hover {
 	background-color: #818c9c98;
 }
 
-
 .section1 {
-	border: #999 1px solid;
-	height: 300px;
-	/* width: 500px; */
-}
-.section2 {
 	border: aqua 1px solid;
 	height: 300px;
 	/* width: 500px; */
 }
-.section3 {
+
+.section1 img{
+	width: 300px;
+}
+
+.section2 {
 	border:  rgb(143, 141, 49) 1px solid;
 	height: 300px;
 	/* width: 500px; */
 }
-.section4 {
-	border:  rgb(75, 58, 121) 1px solid;
-	height: 300px;
-	/* width: 500px; */
+
+.section2 img{
+	width: 300px;
 }
+
 
 footer {
 	/* background-color: #41709c; */
