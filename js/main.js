@@ -1,1 +1,1 @@
-let 
+$('.carousel').carousel()
