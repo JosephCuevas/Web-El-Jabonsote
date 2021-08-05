@@ -2,12 +2,69 @@ body {
 	background: #eee5e9;
 }
 
+/* Header */
+
+.header{
+	display: flex;
+	height: 20rem;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Menu */
+
+.navigation {
+	background-image: linear-gradient(to right,#1f3e61 , rgb(46, 85, 133));
+	height: 4rem;
+	top: 0;
+	position: fixed;
+	width: 100%;
+}
+
+.navigation .menu {
+	display: flex;
+	justify-content: center;
+
+}
+
+.menu a {
+	text-decoration: none;
+	color: #cbd6e2;
+	align-items: end;
+	font-weight: 400;
+	padding: .3rem;
+	margin: 1rem;
+}
+
+.menu a:hover {
+	font-size: 1.05rem;
+	color: #fff;
+}
+
+/* Text Header */
+
+.header .text h4 {
+	text-align: center;
+}
+
+.header .text p {
+	font-size: 1.2rem;
+}
+
+/* Produts Container */
+
+.container {
+	display: flex;
+	margin: 10px;
+}
+
 .grid {
-	margin: 80px;
+	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 30px;
 	align-items: center;
+	text-align: center;
 }
 
 .grid > article {
@@ -51,13 +108,91 @@ body {
 	cursor: pointer;
 }
 
-@media (max-width: 760px){
+
+/* Footer */
+
+.footer{
+	height: 15rem;
+	background-image: linear-gradient(to right,#1f3e61 , rgb(46, 85, 133));
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Text Footer */
+
+footer .menu-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.footer .menu-footer ul {
+	list-style: none;
+}
+
+.footer .menu-footer ul li {
+	margin: 5px;
+	padding-right: 35px;
+}
+
+.footer .menu-footer ul li a {
+	color: #cbd6e2;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.footer .menu-footer ul li a:hover {
+	color: white;
+}
+
+/* Social Media Icons */
+
+footer .social-media{
+	display: flex;
+	justify-content: center;
+}
+
+footer .social-media a {
+	padding: 5px;
+	color: #cbd6e2;
+	font-size: 1.3rem;
+}
+
+footer .social-media i {
+	margin: 3px;
+}
+
+footer .social-media .i-whatsapp {
+	padding-left: 2px;
+}
+
+footer .social-media span {
+	display: block;
+	width: 28px;
+	height: 26px;
+	border-radius: 50px;
+}
+
+footer .social-media span:hover {
+	background-color: white;
+}
+
+footer .social-media a:hover {
+	color: #595f66;
+}
+
+/* View Responsive Design */
+
+@media (max-width: 1000px){
 	.grid {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 580px) {
 	.grid {
 		grid-template-columns: repeat(1, 1fr);
 	}
