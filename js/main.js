@@ -1,7 +1,9 @@
-$("section.contact").click(function () {
-    $(this).toggleClass("contact-toogle");
-});
+/* Scrollreveal */
 
+ScrollReveal().reveal('.header', { delay: 500 });
+ScrollReveal().reveal('.container', { delay: 600 });
+
+/* Menu */
 $(document).ready(main);
 var cont = 1;
 function main() {
@@ -19,3 +21,10 @@ function main() {
         }
     });
 };
+
+/* Contact */
+$("section.contact").click(function () {
+    $(this).toggleClass("contact-toogle");
+});
+
+
