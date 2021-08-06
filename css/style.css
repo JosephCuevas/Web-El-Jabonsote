@@ -18,26 +18,38 @@ body {
 	height: 4rem;
 	top: 0;
 	position: fixed;
-	width: 100%;
+	width: 99.5%;
 }
 
-.navigation .menu {
+.menu {
+	margin-right: 23%;
+	margin-top: 1.5rem;
+}
+
+.menu-bar {
+	display: none;
+}
+
+header .menu ul {
+	overflow: hidden;
+	list-style: none;
 	display: flex;
-	justify-content: center;
-
+	justify-content: right;
 }
 
-.menu a {
-	text-decoration: none;
+header .menu ul li {
+	display: inline-block;
+	
+}
+
+header .menu ul li a {
 	color: #cbd6e2;
-	align-items: end;
-	font-weight: 400;
-	padding: .3rem;
-	margin: 1rem;
+	padding: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
-.menu a:hover {
-	font-size: 1.05rem;
+header .menu ul li a:hover {
 	color: #fff;
 }
 
@@ -108,6 +120,16 @@ body {
 	cursor: pointer;
 }
 
+/* CONTACT */
+.contact {
+	height: 10rem;
+}
+
+.contact-toogle {
+	color: white;
+	font-style: bold;
+	font-size: 2rem;
+}
 
 /* Footer */
 
@@ -199,5 +221,45 @@ footer .social-media a:hover {
 
 	.grid > article {
 		text-align: center;
+	}
+
+	header .menu {
+		width: 15rem;
+		height: 100%;
+		left: -100%;
+		margin: 0;
+		position: fixed;
+		background: #1f3e61;
+	}
+
+	header .menu ul {
+		display: block;
+	}
+
+	header .menu ul li {
+		margin: 1rem;
+		display: block;
+		float: none;
+		border-bottom: 1px solid  rgba(255,255,255,.3);
+	}
+
+	.menu-bar {
+		display: block;
+		width: 10%;
+		background: #ccc;
+	}
+
+	.menu-bar .bt-menu {
+		display: block;
+		height: 4rem;
+		padding: 20px;
+		background: #1f3e61;
+		color: #cbd6e2;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
 	}
 }
