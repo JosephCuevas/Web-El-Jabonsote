@@ -1,7 +1,8 @@
 /* Scrollreveal */
 
-ScrollReveal().reveal('.header', { delay: 500 });
-ScrollReveal().reveal('.container', { delay: 600 });
+ScrollReveal().reveal('.header', { delay: 600 });
+ScrollReveal().reveal('.container', { delay: 1200 });
+ScrollReveal().reveal('.footer', { delay: 300 });
 
 /* Menu */
 $(document).ready(main);
